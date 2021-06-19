@@ -1,12 +1,8 @@
 /* Стилизация аккордеона */
 
 /* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-  display: none
-}
-/* Убираем стандартный маркер Firefox */
-details > summary {
-  list-style: none;
+.accordion__summary::-webkit-details-marker {  
+  display: none;
 }
 
 .accordion {
@@ -15,8 +11,7 @@ details > summary {
 
   background-color: #ffffff; 
 
-  border: 1px solid #ACB5BD;
-  box-sizing: border-box;
+  border: 1px solid #ACB5BD; 
   border-radius: 8px;
 
   font-family: 'Inter', sans-serif;
@@ -31,7 +26,6 @@ details > summary {
   position: relative;
   display: block;
   padding-right: 34px;
-
 
   font-family: inherit;
   color: var(--black);  

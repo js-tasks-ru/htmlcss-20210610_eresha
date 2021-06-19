@@ -3,7 +3,6 @@
   padding: 40px 20px; 
 }
 
-
 .page__title {
   font-family: 'Inter', sans-serif;
   text-align: center; 
@@ -14,4 +13,8 @@
 
 .page__accordion {
   margin: 0 auto 20px; 
+}
+
+.page__accordion:last-child {
+  margin-bottom: 0;
 }
