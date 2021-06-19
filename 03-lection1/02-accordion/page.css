@@ -1,0 +1,17 @@
+.page {
+  margin: 0;
+  padding: 40px 20px; 
+}
+
+
+.page__title {
+  font-family: 'Inter', sans-serif;
+  text-align: center; 
+  font-weight: 500;
+  font-size: 38px;
+  color: var(--black);
+}
+
+.page__accordion {
+  margin: 0 auto 20px; 
+}
