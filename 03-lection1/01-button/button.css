@@ -1,11 +1,11 @@
 /* Стилизация кнопки */
 
 .button {
-  display: inline-block; 
-  min-width: 182px;
-  padding: 14px 16px 13px;
+  display: inline-block;
+  padding: 15px 16px 14px;
   border-radius: 8px;
   border: none;
+  outline: none;
  
   font-style: normal;
   font-weight: 500;
@@ -15,6 +15,10 @@
   
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.button_full-width {
+  width: 100%;
 }
 
 .button_primary {
