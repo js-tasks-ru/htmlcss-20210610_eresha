@@ -1,6 +1,8 @@
 .skeleton {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  
   min-height: 192px;
   width: 100%;
   padding: 24px 40px 32px 24px;
@@ -47,10 +49,6 @@
 
 .skeleton__line-middle {
   width: 60%;
-}
-
-.skeleton__content {
-  margin-top: auto;
 }
 
 .skeleton__line-bottom {
