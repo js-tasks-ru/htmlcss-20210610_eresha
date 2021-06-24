@@ -25,7 +25,6 @@
   margin-bottom: 39px;
 
   color: var(--black);
-  opacity: 0.8;
 }
 
 .histogram__counter { 
@@ -37,8 +36,10 @@
   margin: 0;
 }
 
-.histogram__counter-title { 
+.histogram__counter-title {
   margin-bottom: 6px;
+  
+  opacity: 0.8;
 }
 
 .histogram__counter-sum { 
@@ -60,7 +61,7 @@
 }
 
 .histogram__bar-item {
-  background: var(--blue-2);  
+  background: var(--blue-2);
   margin: 0;
   flex-grow: 1;
 }
