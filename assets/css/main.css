@@ -20,7 +20,9 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
-    --grey-5: #90A0B7;
+    --grey-5: #E2E6E8;
+    --grey-6: #F3F5F5;
+    --grey-7: #E3E7EA;
 
 
     --error: var(--red);
@@ -33,5 +35,5 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
