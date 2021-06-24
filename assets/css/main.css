@@ -24,6 +24,7 @@
     --grey-6: #F3F5F5;
     --grey-7: #E3E7EA;
     --grey-8: #90A0B7;
+    --grey-overlay: 196, 196, 196;
 
     --error: var(--red);
     --success: var(--blue);
