@@ -1,0 +1,24 @@
+.page {
+  padding: 40px 20px;
+}
+
+.page__title {
+  text-align: center; 
+  font-weight: 500;
+  font-size: 38px;
+  color: var(--black);
+}
+
+.page__content {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.page__box {
+  display: flex; 
+  flex-wrap: wrap;
+  width: 380px;
+  justify-content: space-between; 
+  padding: 10px;
+}
