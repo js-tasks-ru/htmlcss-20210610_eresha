@@ -13,6 +13,7 @@
     --blue-3: #2342C0;
     --blue-4: #334D6E;
     --blue-5: 160, 177, 245;
+    --blue-6: #F9FAFC;
 
     --red: #F03D3E;
 
@@ -25,6 +26,7 @@
     --grey-7: #E3E7EA;
     --grey-8: #90A0B7;
     --grey-overlay: 196, 196, 196;
+    --black-shadow: 33, 36, 41;
 
     --error: var(--red);
     --success: var(--blue);
