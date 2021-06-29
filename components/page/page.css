@@ -1,4 +1,17 @@
-.page {
+html,
+body {
   margin: 0;
   padding: 0;
+}
+
+.page {
+  background-color: var(--white);
+  
+  color: var(--black);  font-style: normal;
+  font-weight: 500;
+}
+
+.page__box {
+    max-width: 1110px;
+    margin: 0 auto;
 }
