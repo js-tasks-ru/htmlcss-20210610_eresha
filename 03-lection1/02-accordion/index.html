@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Accordion</title>
-        <link rel="stylesheet" href="../../assets/css/normalize.css">
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./page.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body class="page">
-        <h2 class="page__title">Accordion</h2>
-        <details class="page__accordion accordion" open>
-            <summary class="accordion__summary">
-                Accordion item 1
-            </summary>
-            <p class="accordion__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-        </details>
-        <details class="page__accordion accordion">
-            <summary class="accordion__summary">
-                Accordion item 2
-            </summary>
-            <p class="accordion__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-        </details>
-        <details class="page__accordion accordion">
-            <summary class="accordion__summary">
-                Accordion item 3
-            </summary>
-            <p class="accordion__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-        </details>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+
+<body class="page">
+    <h2 class="page__title">Accordion</h2>
+    <details class="page__accordion accordion" open>
+        <summary class="accordion__summary">
+            Accordion item 1
+            <svg class="accordion__arrow-icon" width="26" height="26">
+                <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+            </svg>
+        </summary>
+        <p class="accordion__content">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+    </details>
+    <details class="page__accordion accordion">
+        <summary class="accordion__summary">
+            Accordion item 2
+
+            <svg class="accordion__arrow-icon" width="26" height="26">
+                <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+            </svg>
+        </summary>
+        <p class="accordion__content">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+    </details>
+    <details class="page__accordion accordion">
+        <summary class="accordion__summary">
+            Accordion item 3
+
+            <svg class="accordion__arrow-icon" width="26" height="26">
+                <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+            </svg>
+        </summary>
+        <p class="accordion__content">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+    </details>
+</body>
+
 </html>
