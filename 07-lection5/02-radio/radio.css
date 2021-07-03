@@ -72,6 +72,10 @@
 .radio__input:checked ~ .radio__state .radio__legend_selected {
   display: block;
 }
+ 
+.radio__input:focus ~ .radio__state .radio__legend  {
+ text-decoration: underline;
+}
 
 
 .radio__input:disabled ~ .radio__state .radio__control {
