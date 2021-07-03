@@ -1,0 +1,47 @@
+.radio {
+  display: inline-block;
+}
+
+.radio__input {
+  
+}
+
+.radio__state {
+
+}
+
+.radio__control {
+  position: relative;
+  width: 28px;
+  height: 28px; 
+
+  background: var(--white);
+
+  border: 1px solid var(--grey-2);
+  box-sizing: border-box;
+  border-radius: 14px;
+}
+
+.radio__legend {
+
+}
+
+.radio__legend_selected {
+  display: none;
+}
+
+.radio__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--blue-2);
+  border-radius: 14px;
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+  
+}

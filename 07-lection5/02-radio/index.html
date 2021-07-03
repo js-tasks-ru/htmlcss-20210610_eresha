@@ -6,6 +6,24 @@
         <link rel="stylesheet" href="./radio.css">
     </head>
     <body>
+        <label class="radio">
+            <input class="radio__input" type="radio" name="radio-name" value="1" checked>
+            <div class="radio__state">
+                <div class="radio__control">
+                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                    </svg>
 
+                </div>
+                <p class="radio__legend radio__legend_default">Default</p>
+                <p class="radio__legend radio__legend_selected">Selected</p>
+            </div>
+            <input class="radio__input" type="radio" name="radio-name" value="2">
+            <div class="radio__state">
+                <div class="radio__control"></div>
+                <p class="radio__legend radio__legend_default">Default</p>
+                <p class="radio__legend radio__legend_selected">Selected</p>
+            </div>
+        </label>
     </body>
 </html>
