@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body class="page">
+    <form class="page__form form">
+        <h1 class="form__title">Input</h1>
+        <fieldset class="form__fieldset">
+            <label class="input form__input">
+                <p class="input__legend input__legend_default">Label</p>
+                <div class="input__field">
+                    <input class="input__control" type="text" placeholder="Placeholder" value="">
+                    <div class="input__icon-wrapper">
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#icon-success"></use>
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+            <label class="input form__input">
+                <p class="input__legend input__legend_default">Success</p>
+                <div class="input__field">
+                    <input class="input__control input__control_success" type="text" placeholder="Placeholder"
+                        value="Success">
+                    <div class="input__icon-wrapper">
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#icon-success"></use>
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+            <label class="input form__input">
+                <p class="input__legend input__legend_default">Error</p>
+                <div class="input__field">
+                    <input class="input__control input__control_error" type="text" placeholder="Placeholder"
+                        value="Error">
+                    <div class="input__icon-wrapper">
+                        <svg class="input__icon input__icon_success" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#icon-success"></use>
+                        </svg>
+                        <svg class="input__icon input__icon_error" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#icon-error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+
+        </fieldset>
+    </form>
+
+</body>
+
 </html>
