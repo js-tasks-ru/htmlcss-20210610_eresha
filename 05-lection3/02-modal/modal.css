@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.modal__content {
+  position: relative;
+}
+
 .modal__title {  
   margin: 0 0 14px 0;
  
@@ -37,10 +41,19 @@
 
 .modal__close {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: inherit;
+  width: 24px;
+  height: 24px;
+  top: -15px;
+  right: -15px;
+  background-color: transparent;
+  display: block;
   border: none;
 
   cursor: pointer;
+}
+
+.modal__close-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--black); 
 }
