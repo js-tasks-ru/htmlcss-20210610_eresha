@@ -39,6 +39,7 @@
   color: var(--grey-4);
 }
 
+
 .checkbox__icon {
   position: absolute;
   width: 18px;
@@ -71,6 +72,22 @@
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__legend {
   color: var(--grey-2);
+}
+
+.checkbox__legend::after {
+  content: "Default";
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__legend::after {
+  content: "Checked";
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__legend::after {
+  content: "Disabled";
+}
+
+.checkbox__input:disabled:checked ~ .checkbox__state .checkbox__legend::after {
+  content: "Disabled checked";
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__legend  {
