@@ -1,0 +1,104 @@
+.toggler {
+  display: inline-block;
+}
+
+.toggler__input {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  position: absolute;
+}
+
+.toggler__state {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+
+.toggler__control {
+  position: relative;
+  margin-right: 12px;
+
+  width: 52px;
+  height: 28px;
+
+}
+
+.toggler__control::before {
+  position: absolute;
+  content: "";
+  display: block;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  top: 2px;
+  left: 2px;
+
+  background-color: var(--grey-2);
+}
+
+.toggler__icon {
+  width: 52px;
+  height: 28px;
+  fill: var(--white);
+  color: var(--grey-2);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control::before {
+  top: 2px;
+  left: calc(100% - 26px);
+
+  background-color: var(--white);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__icon {
+  fill: var(--blue-2);
+  color: var(--blue-2);
+}
+
+.toggler__legend { 
+  display: none;
+  margin: 0;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__legend_on {
+  display: block;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__legend_off {
+  display: none;
+}
+
+.toggler__input ~ .toggler__state .toggler__legend_off {
+  display: block;
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__legend {
+  text-decoration: underline;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__icon {
+  fill: var(--grey-2);
+  color: var(--grey-2);
+}  
+
+.toggler__input:disabled ~ .toggler__state .toggler__control::before {
+  background-color: var(--grey-3);
+}
+
+.toggler__input:disabled ~ .toggler__state  {
+  cursor: default;
+}
