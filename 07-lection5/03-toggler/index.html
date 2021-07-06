@@ -4,8 +4,57 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <link rel="stylesheet" href="./form.css">
     </head>
-    <body>
-
+    <body class="page">
+         <form class="page__form form">
+            <fieldset class="form__fieldset">
+                <h1 class="form__title">Toggle Button</h1>
+         <label class="toggler form__toggler">
+            <input class="toggler__input" type="checkbox" name="toggler" value="1">
+            <div class="toggler__state">
+                <div class="toggler__control"> 
+                  <svg class="toggler__icon" width="52" height="28">
+                      <use xlink:href="../../assets/images/sprite.svg#toggler"></use>
+                    </svg>
+                </div>
+                <p class="toggler__legend toggler__legend_off">Off</p>
+                <p class="toggler__legend toggler__legend_on">On</p>
+            </div>            
+        </label>
+        <label class="toggler form__toggler">
+            <input class="toggler__input" type="checkbox" name="toggler" value="1" checked>
+            <div class="toggler__state">
+                <div class="toggler__control"> 
+                  <svg class="toggler__icon" width="52" height="28">
+                      <use xlink:href="../../assets/images/sprite.svg#toggler"></use>
+                    </svg>
+                </div>
+                <p class="toggler__legend toggler__legend_off">Off</p>
+                <p class="toggler__legend toggler__legend_on">On</p>
+            </div>            
+        </label>
+        <label class="toggler form__toggler">
+            <input class="toggler__input" type="checkbox" name="toggler" value="1" disabled>
+            <div class="toggler__state">
+                <div class="toggler__control"> 
+            <svg class="toggler__icon" width="52" height="28">
+                      <use xlink:href="../../assets/images/sprite.svg#toggler"></use>
+                    </svg>
+                </div>
+                <p class="toggler__legend toggler__legend_off">Disabled</p> 
+            </div>            
+        </label>
+        <label class="toggler form__toggler">
+            <input class="toggler__input" type="checkbox" name="toggler" value="1" checked disabled>
+            <div class="toggler__state">
+                <div class="toggler__control"> 
+                  <svg class="toggler__icon" width="52" height="28">
+                        <use xlink:href="../../assets/images/sprite.svg#toggler"></use>
+                    </svg>
+                </div>
+                <p class="toggler__legend toggler__legend_on">Disabled checked</p>
+            </div>            
+        </label>
     </body>
 </html>
