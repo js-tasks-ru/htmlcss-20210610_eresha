@@ -1,0 +1,101 @@
+.input {
+  display: block;
+  max-width: 350px;
+}
+
+.input__legend {
+  margin: 0 0 5px 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px; 
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase; 
+  color: var(--grey-3);
+}
+
+.input__field {
+  position: relative;
+}
+
+.input__control {  
+  display: block;
+  width: 100%;
+  padding: 17px 40px 13px 24px;
+  
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--grey-4);
+
+  background-color: var(--white); 
+  border: 1px solid var(--grey-2); 
+  border-radius: 8px;
+  
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input__control::-webkit-input-placeholder {
+  color: var(--grey-2);
+}
+
+.input__control:-ms-input-placeholder {
+ color: var(--grey-2);
+}
+
+.input__control::-ms-input-placeholder {
+ color: var(--grey-2);
+}
+
+.input__control::placeholder {
+ color: var(--grey-2);
+}
+
+
+.input__control:focus,  
+.input__control:active {
+    border-color: var(--blue-2);
+    color: var(--grey-4);
+}
+
+.input__control_success:not(:focus) {
+  border-color: var(--grey-2);
+}
+
+.input__control_error:not(:focus) {
+  border-color: var(--error);
+}
+
+.input__icon-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  
+}
+
+
+.input__icon {
+  display: none;
+  
+  width: 24px;
+  height: 24px;
+}
+
+.input__icon_success {
+color: var(--success); 
+}
+
+.input__icon_error {
+  color: var(--error);
+}
+
+.input__control_error:not(:focus) ~ .input__icon-wrapper .input__icon_error {
+    display: block;
+}
+
+.input__control_success:not(:focus) ~ .input__icon-wrapper .input__icon_success {
+    display: block;
+}
