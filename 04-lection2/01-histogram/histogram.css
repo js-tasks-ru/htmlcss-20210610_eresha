@@ -50,6 +50,8 @@
 .histogram__link {
   color: var(--blue-2);
   text-decoration: none;
+  background-color:  transparent;
+  border: none;
 }
 
 .histogram__bar {

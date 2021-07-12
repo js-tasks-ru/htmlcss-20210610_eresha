@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reusable component library</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" href="./components/page/page.css" />
+  <link rel="stylesheet" href="./components/header/header.css" />
+  <link rel="stylesheet" href="./components/main/main.css" />
+  <link rel="stylesheet" href="./components/footer/footer.css" />
+  <link rel="stylesheet" href="./components/cards/cards.css" />
+  <link rel="stylesheet" href="./components/card/card.css" />
+  <link rel="stylesheet" href="./components/tabs/tabs.css" />
+  <link rel="stylesheet" href="./components/navigation/navigation.css" />
+  <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css " />
+  <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css " />
+  <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
+  <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css" />
+</head>
+
+<body class="page">
+  <header class="page__header header">
+    <div class="page__box">
+      <div class="header__wrapper">
+        <div class="header__top">
+          <a href="index.html" class="header__logo-link">
+            <svg class="header__logo-icon" width="110" height="32">
+              <use xlink:href="./assets/images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#components" class="navigation__link navigation__link_active">Components</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__togglers">
+            <p class="header__toggler header__toggler_sun">
+                <svg class="header__toggler-icon header__toggler-icon_sun">
+                <use xlink:href="./assets/images/sprite.svg#sun"></use>
+              </svg>
+            </p>
+            <label class="toggler">
+              <input class="toggler__input" type="checkbox" name="toggler" value="1" />
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <svg class="toggler__icon" width="52" height="28">
+                    <use xlink:href="./assets/images/sprite.svg#toggler"></use>
+                  </svg>
+                </div>
+              </div>
+            </label>
+           <p class="header__toggler header__toggler_moon">
+                <svg class="header__toggler-icon header__toggler-icon_moon">
+                <use xlink:href="./assets/images/sprite.svg#moon"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
+        <h1 class="header__title">Reusable component library</h1>
+      </div>
+    </div>
+  </header>
+  <main class="page__main main">
+    <input id="tab-1" type="radio" name="tabs" checked>
+    <input id="tab-2" type="radio" name="tabs">
+    <input id="tab-3" type="radio" name="tabs">
+    <input id="tab-4" type="radio" name="tabs">
+    <nav class="main__tabs tabs">
+      <div class="page__box">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <label for="tab-1">All components</label>
+          </li>
+          <li class="tabs__item">
+            <label for="tab-2">Elements</label>
+          </li>
+          <li class="tabs__item">
+            <label for="tab-3">Containers</label>
+          </li>
+          <li class="tabs__item">
+            <label for="tab-4">Templates</label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="main__cards cards" id="components">
+      <div class="page__box">
+        <div class="cards__content cards__content_all">
+          <a href="./pages/tooltip.html" class="cards__item card">
+            <div class="card__content">
+              <div class="tooltip">
+                <div class="tooltip__trigger">
+                    <svg class="tooltip__help-icon">
+                        <use xlink:href="../../assets/images/sprite.svg#help"></use>
+                    </svg>                          
+                </div>
+                <div class="tooltip__menu">
+                    <p class="tooltip__text">Helper Text</p>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Tooltip</h3>
+              <p class="card__subtitle">Container</p>
+            </div>
+          </a>
+          <a href="./pages/input.html" class="cards__item card">
+            <div class="card__content">
+
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Custom form elements</h3>
+              <p class="card__subtitle">Element</p>
+            </div>
+          </a>
+          <a href="./pages/calendar.html" class="cards__item card">
+              <div class="card__content"></div>
+              <div class="card__footer">
+                <h3 class="card__title">Calendar</h3>
+                <p class="card__subtitle">Container</p>
+              </div>
+          </a>
+           <a href="./pages/modal.html" class="cards__item card">
+            <div class="card__content"></div>
+            <div class="card__footer">
+              <h3 class="card__title">Modal dialog</h3>
+              <p class="card__subtitle">Container</p>
+            </div>
+          </a>
+          <a href="./pages/histogram.html" class="cards__item card">
+              <div class="card__content">
+                <div class="histogram">
+                    <div class="histogram__header">
+                        <div class="histogram__counter">
+                            <p class="histogram__counter-title">Total orders</p>
+                            <p class="histogram__counter-sum">50254</p>
+                        </div>
+                        <button class="histogram__link">View all</button>
+                    </div>
+                    <div class="histogram__bar">
+                        <div class="histogram__bar-item" style="height: 50px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 50px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 50px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 45px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 17px"></div>
+                    </div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title">Histogram</h3>
+                <p class="card__subtitle">Element</p>
+              </div>
+          </a>
+          <a href="./pages/avatar.html" class="cards__item card">
+            <div class="card__content"></div>
+            <div class="card__footer">
+              <h3 class="card__title">Avatar</h3>
+              <p class="card__subtitle">Element</p>
+            </div>
+          </a>
+        </div>
+        <div class="cards__content cards__content_elements">
+         <a href="./pages/input.html" class="cards__item card">
+            <div class="card__content">
+
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Custom form elements</h3>
+              <p class="card__subtitle">Element</p>
+            </div>
+          </a>
+          <a href="./pages/histogram.html" class="cards__item card">
+              <div class="card__content">
+                <div class="histogram">
+                    <div class="histogram__header">
+                        <div class="histogram__counter">
+                            <p class="histogram__counter-title">Total orders</p>
+                            <p class="histogram__counter-sum">50254</p>
+                        </div>
+                        <button class="histogram__link">View all</button>
+                    </div>
+                    <div class="histogram__bar">
+                        <div class="histogram__bar-item" style="height: 50px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 50px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 50px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 22px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 39px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 45px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 30px"></div>
+                        <div class="histogram__bar-item" style="height: 11px"></div>
+                        <div class="histogram__bar-item" style="height: 35px"></div>
+                        <div class="histogram__bar-item" style="height: 17px"></div>
+                    </div>
+                </div>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title">Histogram</h3>
+                <p class="card__subtitle">Element</p>
+              </div>
+          </a>
+          <a href="./pages/avatar.html" class="cards__item card">
+            <div class="card__content"></div>
+            <div class="card__footer">
+              <h3 class="card__title">Avatar</h3>
+              <p class="card__subtitle">Element</p>
+            </div>
+          </a>
+        </div>
+        <div class="cards__content cards__content_containers">
+           <a href="./pages/tooltip.html" class="cards__item card">
+            <div class="card__content">
+              <div class="tooltip">
+                <div class="tooltip__trigger">
+                    <svg class="tooltip__help-icon">
+                        <use xlink:href="../../assets/images/sprite.svg#help"></use>
+                    </svg>                          
+                </div>
+                <div class="tooltip__menu">
+                    <p class="tooltip__text">Helper Text</p>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Tooltip</h3>
+              <p class="card__subtitle">Container</p>
+            </div>
+          </a>
+          <a href="./pages/calendar.html" class="cards__item card">
+              <div class="card__content"></div>
+              <div class="card__footer">
+                <h3 class="card__title">Calendar</h3>
+                <p class="card__subtitle">Container</p>
+              </div>
+          </a>
+           <a href="./pages/modal.html" class="cards__item card">
+            <div class="card__content"></div>
+            <div class="card__footer">
+              <h3 class="card__title">Modal dialog</h3>
+              <p class="card__subtitle">Container</p>
+            </div>
+          </a>
+        </div>
+        <div class="cards__content cards__content_template">
+          <p>cards__content_template</p>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer class="page__footer footer">
+    <div class="page__box">
+      <div class="footer__content">
+        <h2 class="footer__title" id="about">About</h2>
+        <p class="footer__text">
+          This project is a collection of professionally designed, pre-built,
+          fully responsive HTML snippets you can drop into your projects. Get
+          started by checking out our free preview components, or browsing the
+          PNG previews in the categories you"re most curious about.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

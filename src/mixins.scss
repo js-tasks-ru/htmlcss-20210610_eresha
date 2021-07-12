@@ -1,0 +1,64 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+}
+
+$page-width: 1110px;
+
+@mixin box-shadow {
+    box-shadow: 0px 2px 4px 0px #2124290D;
+}
+
+@mixin media-pc {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin media-tab {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-phone {
+    @media screen and (min-width: 400px) {
+        @content;
+    }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin text ($size: false, $lh: false, $color: false, $weight: false) {
+  font-family:  'Inter', sans-serif;
+  @if $size { font-size: $size; }
+  @if $lh { line-height: $lh; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+}
+
+
+@mixin respond ($breakpoint) {
+
+        // $breakpoint is simply a variable that can have several values
+
+        @if $breakpoint==tablet {
+
+            // here `laptop` is the value of $breakpoint
+            // when call laptop, we mean the following piece of code        
+
+        @media only screen and (max-width: 600px) {
+          @content;
+        }
+      }
+
+      @if $breakpoint==mobile {
+        @media only screen and (max-width: 480px) {
+          @content;
+        }
+      }
+    }

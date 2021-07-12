@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Component library</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../components/page/page.css">
+  <link rel="stylesheet" href="../components/header/header.css">
+  <link rel="stylesheet" href="../components/main/main.css">
+  <link rel="stylesheet" href="../components/footer/footer.css">
+  <link rel="stylesheet" href="../components/content/content.css">
+  <link rel="stylesheet" href="../components/tabs/tabs.css">
+  <link rel="stylesheet" href="../components/navigation/navigation.css" />
+  <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+</head>
+
+<body class="page page_bgc-template">
+  <header class="page__header header">
+    <div class="page__box">
+      <div class="header__wrapper">
+        <div class="header__top">
+          <a href="../index1.html" class="header__logo-link">
+            <svg class="header__logo-icon" width="110" height="32">
+              <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#components" class="navigation__link navigation__link_active">Components</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__toggler">
+            <p class="header__toggler-sun">
+              <svg class="header__toggler-sun-icon">
+                <use xlink:href="../assets/images/sprite.svg#sun"></use>
+              </svg>
+            </p>
+            <label class="toggler">
+              <input class="toggler__input" type="checkbox" name="toggler" value="1" />
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <svg class="toggler__icon" width="52" height="28">
+                    <use xlink:href="../assets/images/sprite.svg#toggler"></use>
+                  </svg>
+                </div>
+              </div>
+            </label>
+            <p class="header__toggler-moon">
+              <svg class="header__toggler-moon-icon">
+                <use xlink:href="../assets/images/sprite.svg#moon"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
+        <h1 class="header__title">Reusable component library</h1>
+      </div>
+    </div>
+  </header>
+  <main class="page__main page__main_inner">
+    <div class="page__box">
+      <div class="inner">
+        <aside class="inner__sidebar sidebar">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <h3 class="sidebar__title"></h3>
+              <nav class="sidebar__menu">
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+              </nav>
+            </li>
+            <li class="sidebar__nav-item">
+              <h3 class="sidebar__title"></h3>
+              <nav class="sidebar__menu">
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+              </nav>
+            </li>
+            <li class="sidebar__nav-item">
+              <h3 class="sidebar__title"></h3>
+              <nav class="sidebar__menu">
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+              </nav>
+            </li>
+          </ul>
+        </aside>
+        <div class="inner__content content">
+          <div class="content__component">
+
+          </div>
+          <div class="content__tabs">
+            <input id="tab-html" type="radio" name="tabs" checked>
+            <input id="tab-css" type="radio" name="tabs">
+            <nav class="content__tabs-nav tabs">
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <label for="tab-html">HTML</label>
+                </li>
+                <li class="tabs__item">
+                  <label for="tab-css">CSS</label>
+                </li>
+              </ul>
+            </nav>
+            <section class="content__block">
+              <div class="content__code content__code_html">
+                <pre>
+                  <code>
+                      <div class="tooltip">
+                        <div class="tooltip__trigger">
+                          <svg class="tooltip__help-icon">
+                              <use xlink:href="../../assets/images/sprite.svg#help"></use>
+                          </svg>
+                                
+                        </div>
+                        <div class="tooltip__menu">
+                            <p class="tooltip__text">Helper Text</p>
+                        </div>
+                    </div>
+                  </code>
+                </pre>
+              </div>
+              <div class="content__code content__code_css"> CSS
+              </div>
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <h4 class="footer__text">Reusable component library</h4>
+  </footer>
+</body>
+
+</html>

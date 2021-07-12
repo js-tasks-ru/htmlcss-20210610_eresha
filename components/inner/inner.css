@@ -1,0 +1,4 @@
+.inner {
+  display: grid;
+  grid-template-columns: 285px 1fr;
+}
