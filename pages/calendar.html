@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Component library</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/normalize.css" />
+  <link rel="stylesheet" href="../components/page/page.css" />
+  <link rel="stylesheet" href="../components/header/header.css" />
+  <link rel="stylesheet" href="../components/main/main.css" />
+  <link rel="stylesheet" href="../components/footer/footer.css" />
+  <link rel="stylesheet" href="../components/content/content.css" />
+  <link rel="stylesheet" href="../components/inner/inner.css" />
+  <link rel="stylesheet" href="../components/sidebar/sidebar.css" />
+  <link rel="stylesheet" href="../components/tabs/tabs.css" />
+  <link rel="stylesheet" href="../components/navigation/navigation.css" />
+  <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css" />
+  <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css" />
+</head>
+
+<body class="page page_template">
+  <header class="page__header header">
+    <div class="page__box">
+      <div class="header__wrapper">
+        <div class="header__top header__top_inner">
+          <a href="../index1.html" class="header__logo-link">
+            <svg class="header__logo-icon" width="110" height="32">
+              <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#components" class="navigation__link navigation__link_active">Components</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about" class="navigation__link">About</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__togglers">
+            <p class="header__toggler header__toggler_sun">
+              <svg class="header__toggler-icon header__toggler-icon_sun">
+                <use xlink:href="../assets/images/sprite.svg#sun"></use>
+              </svg>
+            </p>
+            <label class="toggler">
+              <input class="toggler__input" type="checkbox" name="toggler" value="1" />
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <svg class="toggler__icon" width="52" height="28">
+                    <use xlink:href="../assets/images/sprite.svg#toggler"></use>
+                  </svg>
+                </div>
+              </div>
+            </label>
+            <p class="header__toggler header__toggler_moon">
+              <svg class="header__toggler-icon header__toggler-icon_moon">
+                <use xlink:href="../assets/images/sprite.svg#moon"></use>
+              </svg>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page__main page__main_inner">
+    <div class="page__box">
+      <div class="inner">
+        <aside class="inner__sidebar sidebar">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <h3 class="sidebar__title">Elements</h3>
+              <nav class="sidebar__menu">
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./histogram.html" class="sidebar__menu-link">Histogram</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+              </nav>
+            </li>
+            <li class="sidebar__nav-item">
+              <h3 class="sidebar__title">Containers</h3>
+              <nav class="sidebar__menu">
+                <a class="sidebar__menu-link  sidebar__menu-link_active">Calendar</a>
+                <a href="./tooltip.html" class="sidebar__menu-link">Tooltip</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+              </nav>
+            </li>
+            <li class="sidebar__nav-item">
+              <h3 class="sidebar__title">Templates</h3>
+              <nav class="sidebar__menu">
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+                <a href="./avatar.html" class="sidebar__menu-link">Avatar</a>
+                <a href="./input.html" class="sidebar__menu-link">Custom form elements</a>
+                <a href="./button.html" class="sidebar__menu-link">Button</a>
+              </nav>
+            </li>
+          </ul>
+        </aside>
+        <div class="inner__content content">
+          <h2 class="content__title content__container">Calendar</h2>
+          <div class="content__component content__component_calendar content__container">
+           <div class="calendar">
+                <div class="calendar__border">
+                  <div class="calendar__body-wrapper">
+                    <div class="calendar__title">October 2019</div>
+                    <div class="calendar__wrapper">
+                      <div class="calendar__inner">
+                        <span class="calendar__item calendar__item_day">Mon</span>
+                        <span class="calendar__item calendar__item_day">Tue</span>
+                        <span class="calendar__item calendar__item_day">Wed</span>
+                        <span class="calendar__item calendar__item_day">Thu</span>
+                        <span class="calendar__item calendar__item_day">Fri</span>
+                        <span class="calendar__item calendar__item_day">Sat</span>
+                        <span class="calendar__item calendar__item_day">Sun</span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item">1</span>
+                        <span class="calendar__item">2</span>
+                        <span class="calendar__item">3</span>
+                        <span class="calendar__item">4</span>
+                        <span class="calendar__item">5</span>
+                        <span class="calendar__item">6</span>
+                        <span class="calendar__item">7</span>
+                        <span class="calendar__item">8</span>
+                        <span class="calendar__item">9</span>
+                        <span class="calendar__item">10</span>
+                        <span class="calendar__item">11</span>
+                        <span class="calendar__item">12</span>
+                        <span class="calendar__item">13</span>
+                        <span class="calendar__item">14</span>
+                        <span class="calendar__item">15</span>
+                        <span class="calendar__item">16</span>
+                        <span class="calendar__item">17</span>
+                        <span class="calendar__item calendar__item_range-border">18</span>
+                        <span class="calendar__item calendar__item_range">19</span>
+                        <span class="calendar__item calendar__item_range">20</span>
+                        <span class="calendar__item calendar__item_range">21</span>
+                        <span class="calendar__item calendar__item_range">22</span>
+                        <span class="calendar__item calendar__item_range-border">23</span>
+                        <span class="calendar__item">24</span>
+                        <span class="calendar__item">25</span>
+                        <span class="calendar__item">26</span>
+                        <span class="calendar__item">27</span>
+                        <span class="calendar__item">28</span>
+                        <span class="calendar__item">29</span>
+                        <span class="calendar__item">30</span>
+                        <span class="calendar__item">31</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="content__tabs">
+            <input id="tab-html" type="radio" name="tabs" checked />
+            <input id="tab-css" type="radio" name="tabs" />
+            <nav class="content__tabs-nav tabs">
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <label for="tab-html">HTML</label>
+                </li>
+                <li class="tabs__item">
+                  <label for="tab-css">CSS</label>
+                </li>
+              </ul>
+            </nav>
+            <section class="content__block  content__container">
+              <div class="content__code content__code_html">
+                <pre>
+                      <code>
+&lt;div class="calendar calendar_preview"&gt;
+  &lt;div class="calendar__border"&gt;
+    &lt;div class="calendar__body-wrapper"&gt;
+      &lt;div class="calendar__title"&gt;October 2019&lt;/div&gt;
+      &lt;div class="calendar__wrapper"&gt;
+        &lt;div class="calendar__inner"&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Mon&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Tue&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Wed&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Thu&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Fri&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Sat&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_day"&gt;Sun&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;1&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;2&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;3&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;4&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;5&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;6&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;7&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;8&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;9&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;10&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;11&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;12&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;13&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;14&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;15&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;16&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;17&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_range-border"&gt;18&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_range"&gt;19&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_range"&gt;20&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_range"&gt;21&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_range"&gt;22&lt;/span&gt;
+          &lt;span class="calendar__item calendar__item_range-border"&gt;23&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;24&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;25&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;26&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;27&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;28&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;29&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;30&lt;/span&gt;
+          &lt;span class="calendar__item"&gt;31&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+                      </code>
+                    </pre>
+              </div>
+              <div class="content__code content__code_css">
+                <pre>
+                  <code>
+  .calendar {
+  position: relative; 
+  max-width: 304px;
+  width: 100%;
+}
+
+.calendar_preview {
+      max-width: 200px;
+    width: 200px;
+    min-width: 75px;
+}
+
+.calendar__border {
+  width: 100%;
+  padding-bottom: 115%;
+
+   background: var(--white); 
+  
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px; 
+}
+
+.calendar__body-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8%;
+}
+
+.calendar_preview .calendar__item {
+    font-size: 9px;
+}
+
+.calendar_preview .calendar__title {
+    font-size: 14px;
+}
+
+.calendar__title {  
+  margin-bottom: 9%;
+  
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px; 
+  
+  color: var(--blue-4);
+  text-align: center;
+}
+
+.calendar__wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.calendar__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__item {  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px; 
+  color: var(--blue-4);
+}
+
+.calendar__item_day {
+  font-family: "Inter", sans-serif; 
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grey-8);
+}
+
+.calendar__item_range {
+  background-color: rgba(var(--blue-5), 0.2);
+}
+
+.calendar__item_range-border {
+  color: var(--white);
+  background-color: var(--blue-2);
+}
+                  </code>
+                </pre>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer footer_inner">
+    <div class="page__box">
+      <h4 class="footer_inner-title">Reusable component library</h4>
+    </div>
+  </footer>
+</body>
+
+</html>

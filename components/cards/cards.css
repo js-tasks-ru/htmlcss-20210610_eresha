@@ -1,6 +1,7 @@
 .cards {
  padding: 68px 0 64px;
  border-bottom: 1px solid var(--grey-2); 
+ text-align: center;
 } 
 
 .cards__content {
@@ -10,4 +11,7 @@
   grid-gap: 30px;
 }
 
-
+.cards__button { 
+  margin-top: 40px;
+  min-width: 182px; 
+}

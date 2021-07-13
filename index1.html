@@ -17,9 +17,11 @@
   <link rel="stylesheet" href="./components/card/card.css" />
   <link rel="stylesheet" href="./components/tabs/tabs.css" />
   <link rel="stylesheet" href="./components/navigation/navigation.css" />
+  <link rel="stylesheet" href="./03-lection1/01-button/button.css " />
   <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css " />
   <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css " />
   <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css" />
+  <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css " />
   <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css" />
 </head>
 
@@ -48,7 +50,7 @@
           </nav>
           <div class="header__togglers">
             <p class="header__toggler header__toggler_sun">
-                <svg class="header__toggler-icon header__toggler-icon_sun">
+              <svg class="header__toggler-icon header__toggler-icon_sun">
                 <use xlink:href="./assets/images/sprite.svg#sun"></use>
               </svg>
             </p>
@@ -62,8 +64,8 @@
                 </div>
               </div>
             </label>
-           <p class="header__toggler header__toggler_moon">
-                <svg class="header__toggler-icon header__toggler-icon_moon">
+            <p class="header__toggler header__toggler_moon">
+              <svg class="header__toggler-icon header__toggler-icon_moon">
                 <use xlink:href="./assets/images/sprite.svg#moon"></use>
               </svg>
             </p>
@@ -103,12 +105,12 @@
             <div class="card__content">
               <div class="tooltip">
                 <div class="tooltip__trigger">
-                    <svg class="tooltip__help-icon">
-                        <use xlink:href="../../assets/images/sprite.svg#help"></use>
-                    </svg>                          
+                  <svg class="tooltip__help-icon">
+                    <use xlink:href="../../assets/images/sprite.svg#help"></use>
+                  </svg>
                 </div>
                 <div class="tooltip__menu">
-                    <p class="tooltip__text">Helper Text</p>
+                  <p class="tooltip__text">Helper Text</p>
                 </div>
               </div>
             </div>
@@ -127,13 +129,67 @@
             </div>
           </a>
           <a href="./pages/calendar.html" class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__footer">
-                <h3 class="card__title">Calendar</h3>
-                <p class="card__subtitle">Container</p>
+            <div class="card__content">
+              <div class="calendar calendar_preview">
+                <div class="calendar__border">
+                  <div class="calendar__body-wrapper">
+                    <div class="calendar__title">October 2019</div>
+                    <div class="calendar__wrapper">
+                      <div class="calendar__inner">
+                        <span class="calendar__item calendar__item_day">Mon</span>
+                        <span class="calendar__item calendar__item_day">Tue</span>
+                        <span class="calendar__item calendar__item_day">Wed</span>
+                        <span class="calendar__item calendar__item_day">Thu</span>
+                        <span class="calendar__item calendar__item_day">Fri</span>
+                        <span class="calendar__item calendar__item_day">Sat</span>
+                        <span class="calendar__item calendar__item_day">Sun</span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item"></span>
+                        <span class="calendar__item">1</span>
+                        <span class="calendar__item">2</span>
+                        <span class="calendar__item">3</span>
+                        <span class="calendar__item">4</span>
+                        <span class="calendar__item">5</span>
+                        <span class="calendar__item">6</span>
+                        <span class="calendar__item">7</span>
+                        <span class="calendar__item">8</span>
+                        <span class="calendar__item">9</span>
+                        <span class="calendar__item">10</span>
+                        <span class="calendar__item">11</span>
+                        <span class="calendar__item">12</span>
+                        <span class="calendar__item">13</span>
+                        <span class="calendar__item">14</span>
+                        <span class="calendar__item">15</span>
+                        <span class="calendar__item">16</span>
+                        <span class="calendar__item">17</span>
+                        <span class="calendar__item calendar__item_range-border">18</span>
+                        <span class="calendar__item calendar__item_range">19</span>
+                        <span class="calendar__item calendar__item_range">20</span>
+                        <span class="calendar__item calendar__item_range">21</span>
+                        <span class="calendar__item calendar__item_range">22</span>
+                        <span class="calendar__item calendar__item_range-border">23</span>
+                        <span class="calendar__item">24</span>
+                        <span class="calendar__item">25</span>
+                        <span class="calendar__item">26</span>
+                        <span class="calendar__item">27</span>
+                        <span class="calendar__item">28</span>
+                        <span class="calendar__item">29</span>
+                        <span class="calendar__item">30</span>
+                        <span class="calendar__item">31</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Calendar</h3>
+              <p class="card__subtitle">Container</p>
+            </div>
           </a>
-           <a href="./pages/modal.html" class="cards__item card">
+          <a href="./pages/modal.html" class="cards__item card">
             <div class="card__content"></div>
             <div class="card__footer">
               <h3 class="card__title">Modal dialog</h3>
@@ -141,55 +197,59 @@
             </div>
           </a>
           <a href="./pages/histogram.html" class="cards__item card">
-              <div class="card__content">
-                <div class="histogram">
-                    <div class="histogram__header">
-                        <div class="histogram__counter">
-                            <p class="histogram__counter-title">Total orders</p>
-                            <p class="histogram__counter-sum">50254</p>
-                        </div>
-                        <button class="histogram__link">View all</button>
-                    </div>
-                    <div class="histogram__bar">
-                        <div class="histogram__bar-item" style="height: 50px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 50px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 50px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 45px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 17px"></div>
-                    </div>
+            <div class="card__content">
+              <div class="histogram">
+                <div class="histogram__header">
+                  <div class="histogram__counter">
+                    <p class="histogram__counter-title">Total orders</p>
+                    <p class="histogram__counter-sum">50254</p>
+                  </div>
+                  <span class="histogram__link">View all</span>
+                </div>
+                <div class="histogram__bar">
+                  <div class="histogram__bar-item" style="height: 50px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 50px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 50px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 45px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 17px"></div>
                 </div>
               </div>
-              <div class="card__footer">
-                <h3 class="card__title">Histogram</h3>
-                <p class="card__subtitle">Element</p>
-              </div>
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Histogram</h3>
+              <p class="card__subtitle">Element</p>
+            </div>
           </a>
           <a href="./pages/avatar.html" class="cards__item card">
-            <div class="card__content"></div>
+            <div class="card__content">
+              <div class="avatar avatar_preview">
+                <img class="avatar__img" src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
+              </div>
+            </div>
             <div class="card__footer">
               <h3 class="card__title">Avatar</h3>
               <p class="card__subtitle">Element</p>
@@ -197,7 +257,7 @@
           </a>
         </div>
         <div class="cards__content cards__content_elements">
-         <a href="./pages/input.html" class="cards__item card">
+          <a href="./pages/input.html" class="cards__item card">
             <div class="card__content">
 
             </div>
@@ -207,52 +267,52 @@
             </div>
           </a>
           <a href="./pages/histogram.html" class="cards__item card">
-              <div class="card__content">
-                <div class="histogram">
-                    <div class="histogram__header">
-                        <div class="histogram__counter">
-                            <p class="histogram__counter-title">Total orders</p>
-                            <p class="histogram__counter-sum">50254</p>
-                        </div>
-                        <button class="histogram__link">View all</button>
-                    </div>
-                    <div class="histogram__bar">
-                        <div class="histogram__bar-item" style="height: 50px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 50px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 50px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 22px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 39px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 45px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 30px"></div>
-                        <div class="histogram__bar-item" style="height: 11px"></div>
-                        <div class="histogram__bar-item" style="height: 35px"></div>
-                        <div class="histogram__bar-item" style="height: 17px"></div>
-                    </div>
+            <div class="card__content">
+              <div class="histogram">
+                <div class="histogram__header">
+                  <div class="histogram__counter">
+                    <p class="histogram__counter-title">Total orders</p>
+                    <p class="histogram__counter-sum">50254</p>
+                  </div>
+                  <span class="histogram__link">View all</span>
+                </div>
+                <div class="histogram__bar">
+                  <div class="histogram__bar-item" style="height: 50px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 50px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 50px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 22px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 39px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 45px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 30px"></div>
+                  <div class="histogram__bar-item" style="height: 11px"></div>
+                  <div class="histogram__bar-item" style="height: 35px"></div>
+                  <div class="histogram__bar-item" style="height: 17px"></div>
                 </div>
               </div>
-              <div class="card__footer">
-                <h3 class="card__title">Histogram</h3>
-                <p class="card__subtitle">Element</p>
-              </div>
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Histogram</h3>
+              <p class="card__subtitle">Element</p>
+            </div>
           </a>
           <a href="./pages/avatar.html" class="cards__item card">
             <div class="card__content"></div>
@@ -263,16 +323,16 @@
           </a>
         </div>
         <div class="cards__content cards__content_containers">
-           <a href="./pages/tooltip.html" class="cards__item card">
+          <a href="./pages/tooltip.html" class="cards__item card">
             <div class="card__content">
               <div class="tooltip">
                 <div class="tooltip__trigger">
-                    <svg class="tooltip__help-icon">
-                        <use xlink:href="../../assets/images/sprite.svg#help"></use>
-                    </svg>                          
+                  <svg class="tooltip__help-icon">
+                    <use xlink:href="../../assets/images/sprite.svg#help"></use>
+                  </svg>
                 </div>
                 <div class="tooltip__menu">
-                    <p class="tooltip__text">Helper Text</p>
+                  <p class="tooltip__text">Helper Text</p>
                 </div>
               </div>
             </div>
@@ -282,13 +342,13 @@
             </div>
           </a>
           <a href="./pages/calendar.html" class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__footer">
-                <h3 class="card__title">Calendar</h3>
-                <p class="card__subtitle">Container</p>
-              </div>
+            <div class="card__content"></div>
+            <div class="card__footer">
+              <h3 class="card__title">Calendar</h3>
+              <p class="card__subtitle">Container</p>
+            </div>
           </a>
-           <a href="./pages/modal.html" class="cards__item card">
+          <a href="./pages/modal.html" class="cards__item card">
             <div class="card__content"></div>
             <div class="card__footer">
               <h3 class="card__title">Modal dialog</h3>
@@ -299,9 +359,12 @@
         <div class="cards__content cards__content_template">
           <p>cards__content_template</p>
         </div>
+
+        <button class="cards__button button_alternate button">Load more</button>
+
       </div>
     </section>
-    </div>
+
   </main>
   <footer class="page__footer footer">
     <div class="page__box">

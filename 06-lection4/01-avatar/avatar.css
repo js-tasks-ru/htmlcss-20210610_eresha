@@ -1,9 +1,13 @@
 .avatar {
-  width: 116px;
-  height: 116px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 
   overflow: hidden;
+}
+
+.avatar_preview {
+  width: 200px;
 }
 
 .avatar__img {
