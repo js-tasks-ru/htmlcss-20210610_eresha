@@ -4,8 +4,8 @@
   "description": "Course Materials",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "build": "sass src/index.scss build/style.css",
-    "build-s": "postcss src/index.scss -o build-s/index1.css",
+    "build-sass": "sass src/index.scss build/style.css",
+    "build": "postcss src/index.scss -o build/index.css",
     "fix": "stylelint --fix **/*.scss"
   },
   "husky": {

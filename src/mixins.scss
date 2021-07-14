@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 
-@mixin size($width, $height: $width) {
+@mixin size ($width, $height: $width) {
   width: $width;
   height: $height;
 }
@@ -38,46 +38,3 @@
   left: 50%;
   transform: translate(-50%, 0);
 }
-
-
-// $page-width: 1110px;
-
-// @mixin media-pc {
-//     @media screen and (min-width: 1280px) {
-//         @content;
-//     }
-// }
-
-// @mixin media-tab {
-//     @media screen and (min-width: 768px) {
-//         @content;
-//     }
-// }
-
-// @mixin media-phone {
-//     @media screen and (min-width: 400px) {
-//         @content;
-//     }
-// }
-
-
-// @mixin respond ($breakpoint) {
-
-//         // $breakpoint is simply a variable that can have several values
-
-//         @if $breakpoint==tablet {
-
-//             // here `laptop` is the value of $breakpoint
-//             // when call laptop, we mean the following piece of code        
-
-//         @media only screen and (max-width: 600px) {
-//           @content;
-//         }
-//       }
-
-//       @if $breakpoint==mobile {
-//         @media only screen and (max-width: 480px) {
-//           @content;
-//         }
-//       }
-//     }
