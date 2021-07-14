@@ -1,0 +1,86 @@
+.tabs {
+  position: relative;
+  background-color: var(--white);
+
+  &::after {
+  position: absolute;
+  content: '';
+  @include size(100vw, 1px);
+  @include position-center();
+  background-color: var(--grey-2);
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    color: var(--grey-3);
+    padding: 8px 0;
+    cursor: pointer;
+    
+   &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    
+    & > li label {
+      cursor: pointer;
+    }
+
+    & > li label::after {
+      content: '';
+      display: none;
+      position: absolute;
+      @include size(100%, 5px);
+      top: 100%;
+      background-color: var(--black);
+    }
+  }
+}
+
+
+
+#tab-1:checked ~ .tabs label[for='tab-1'],
+#tab-2:checked ~ .tabs label[for='tab-2'],
+#tab-3:checked ~ .tabs label[for='tab-3'],
+#tab-4:checked ~ .tabs label[for='tab-4'],
+#tab-html:checked ~ .tabs label[for='tab-html'],
+#tab-css:checked ~ .tabs label[for='tab-css'] {
+  color: var(--black);
+}
+
+#tab-1:checked ~ .tabs label[for='tab-1']::after,
+#tab-2:checked ~ .tabs label[for='tab-2']::after,
+#tab-3:checked ~ .tabs label[for='tab-3']::after,
+#tab-4:checked ~ .tabs label[for='tab-4']::after,
+#tab-html:checked ~ .tabs label[for='tab-html']::after,
+#tab-css:checked ~ .tabs label[for='tab-css']::after {
+  display: block;
+}
+
+#tab-1:checked ~ .cards .cards__content_all {
+  display: grid;
+}
+
+#tab-2:checked ~ .cards .cards__content_elements {
+  display: grid;
+}
+
+#tab-3:checked ~ .cards .cards__content_containers {
+  display: grid;
+}
+
+#tab-4:checked ~ .cards .cards__content_template {
+  display: grid;
+}
+
+#tab-html:checked ~ .content__block .content__code_html {
+  display: block;
+}
+
+#tab-css:checked ~ .content__block .content__code_css {
+  display: block;
+}

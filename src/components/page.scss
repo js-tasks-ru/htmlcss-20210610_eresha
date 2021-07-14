@@ -9,9 +9,21 @@ body {
   
   color: var(--black);  font-style: normal;
   font-weight: 500;
-}
+  
+  &__box {
+      max-width: 1110px;
+      margin: 0 auto;
+      padding: 0 16px;
+  }
 
-.page__box {
-    max-width: 1110px;
-    margin: 0 auto;
+  &_template {  
+    background-color: var(--blue-6);
+  }
+
+  &__main input { 
+    opacity: 1;
+    @include size(1px);
+    pointer-events: none;
+    position: absolute; 
+  }
 }

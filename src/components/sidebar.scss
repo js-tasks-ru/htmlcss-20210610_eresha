@@ -1,0 +1,35 @@
+.sidebar {
+  &__nav-list {
+    @include reset-list();
+  }
+
+  &__menu {  
+    display: flex;
+    flex-direction: column;
+    
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+      
+    @include text(20px, 26px, 400,  var(--black-1));  
+  }
+
+  &__menu-link {
+    margin: 0 0 4px;
+
+    @include text(14px, 22px, 400,  var(--black)); 
+
+    text-decoration: none;
+
+    &_active {
+      color: var(--red-1);
+    }
+  } 
+}
