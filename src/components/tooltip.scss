@@ -1,5 +1,3 @@
-@import "../mixins.scss";
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -21,7 +19,7 @@
 
 
         &::after {
-            content: '';
+            content: "";
             border: 14px solid transparent;
             border-top: 6px solid var(--blue-2);
             position: absolute;
