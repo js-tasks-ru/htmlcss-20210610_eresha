@@ -1,61 +1,56 @@
 .histogram {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  
-  padding: 16px 24px 24px;
-
-  @include text (16px, 24px, 400, var(--black)); 
-  font-style: normal;
-  
-  background-color: var(--white);
-
-  border: 1px solid var(--grey-3);
-  box-sizing: border-box;
-  border-radius: 8px; 
-
-  &__header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 39px;
-  }
-
-  &__counter { 
-    text-align: left;
-  }
-
-  &__counter-sum,
-  &__counter-title {
-    margin: 0;
-  }
-
-  &__counter-title {
-    margin-bottom: 6px;
-    
-    opacity: 0.8;
-  }
-
-  &__counter-sum {
-    @include text(20px, 26px);
-  }
-
-  &__link {
-    color: var(--blue-2);
-    text-decoration: none;
-  }
-
-  &__bar {
-    display: flex;
-    align-items: flex-end;
-    gap: 1px;
-
+    flex-direction: column;
     width: 100%;
-  }
+    padding: 16px 24px 24px;
 
-  &__bar-item {
-    background: var(--blue-2);
-    margin: 0;
-    flex-grow: 1;
-  }
+    @include text (16px, 24px, 400, var(--black));
+    font-style: normal;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 39px;
+    }
+
+    &__counter {
+        text-align: left;
+    }
+
+    &__counter-sum,
+    &__counter-title {
+        margin: 0;
+    }
+
+    &__counter-title {
+        margin-bottom: 6px;
+        opacity: .8;
+    }
+
+    &__counter-sum {
+        @include text(20px, 26px);
+    }
+
+    &__link {
+        color: var(--blue-2);
+        text-decoration: none;
+    }
+
+    &__bar {
+        display: flex;
+        align-items: flex-end;
+        gap: 1px;
+        width: 100%;
+    }
+
+    &__bar-item {
+        background: var(--blue-2);
+        margin: 0;
+        flex-grow: 1;
+    }
 }

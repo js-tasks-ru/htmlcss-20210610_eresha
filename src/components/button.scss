@@ -1,54 +1,51 @@
 .button {
-  display: inline-block;
-  padding: 15px 16px 14px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
- 
-  @include text(16px, 19px, 500);
-  font-style: normal;
+    display: inline-block;
+    padding: 15px 16px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
 
-  text-align: center;
-  
-  box-sizing: border-box;
-  cursor: pointer;
-  
-
-  &[disabled] {
-    opacity: 0.5;
-    cursor: default;
-  }
-
-  &_full-width {
-    width: 100%;
-  }
-}
-
-.button_primary {
-  color: var(--white);
-  background-color: var(--blue-2);
-  
-  &:hover:not(.button[disabled]) {
-    background-color: var(--blue-3);
-  }
-}
-
-.button_secondary {
-  color: var(--white);
-  background-color: var(--secondary);
-
-  &:hover:not(.button[disabled]) {
-    background-color: var(--purple-2);
-  }
-}
+    @include text(16px, 19px, 500);
+    font-style: normal;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
 
 
-.button_alternate {
-  color: var(--grey-4);
-  background-color: var(--blue-6);
-  border: 1px solid var(--grey-3);
+    &[disabled] {
+        opacity: .5;
+        cursor: default;
+    }
 
-  &:hover:not(.button[disabled]) { 
-    border-color: var(--black);
-  }
+    &_full-width {
+        width: 100%;
+    }
+
+    &_primary {
+        color: var(--white);
+        background-color: var(--blue-2);
+
+        &:hover:not(.button[disabled]) {
+            background-color: var(--blue-3);
+        }
+    }
+
+    &_secondary {
+        color: var(--white);
+        background-color: var(--secondary);
+
+        &:hover:not(.button[disabled]) {
+            background-color: var(--purple-2);
+        }
+    }
+
+    &_alternate {
+        color: var(--grey-4);
+        background-color: var(--blue-6);
+        border: 1px solid var(--grey-3);
+
+        &:hover:not(.button[disabled]) {
+            border-color: var(--black);
+        }
+    }
 }

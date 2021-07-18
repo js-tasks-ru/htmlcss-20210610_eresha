@@ -1,29 +1,16 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .page {
-  background-color: var(--white);
-  
-  color: var(--black);  font-style: normal;
-  font-weight: 500;
-  
-  &__box {
-      max-width: 1110px;
-      margin: 0 auto;
-      padding: 0 16px;
-  }
+    background-color: var(--white);
+    color: var(--black);
+    font-style: normal;
+    font-weight: 500;
 
-  &_template {  
-    background-color: var(--blue-6);
-  }
+    &__box {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
 
-  &__main input { 
-    opacity: 1;
-    @include size(1px);
-    pointer-events: none;
-    position: absolute; 
-  }
+    &_template {
+        background-color: var(--blue-6);
+    }
 }

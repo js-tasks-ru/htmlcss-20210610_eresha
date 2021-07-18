@@ -1,94 +1,95 @@
 .toggler {
-  display: inline-block;
-   
-  &__state {
-    display: flex;
-    align-items: center;
-    
-    cursor: pointer;
-  }
+    display: inline-block;
 
-
-  &__control {
-    position: relative;
-    @include size(52px, 28px);
-
-    
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-
-      @include size(24px); 
-      border-radius: 50%;
-      @include position(2px, 2px);
-
-      background-color: var(--grey-2);
-    }
-  }
-
-  &__icon {
-    @include size(52px, 28px); 
-    fill: var(--white);
-    color: var(--grey-2);
-  }
-
-
-  &__legend { 
-    display: none;
-    margin: 0;
-    margin-left: 12px;
-
-    @include font(); 
-    @include text(16px, 24px, 400, var(--grey-4));
-    font-style: normal;
-  }
-   
-  &__input {
-    opacity: 0;
-    @include size(1px);
-    pointer-events: none;
-    position: absolute;    
-    
-    &:checked ~ .toggler__state .toggler__control::before {
-      top: 2px;
-      left: calc(100% - 26px);
-
-      background-color: var(--white);
+    &__state {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
     }
 
-    &:checked ~ .toggler__state .toggler__icon {
-      fill: var(--blue-2);
-      color: var(--blue-2);
-    }
-    &:checked ~ .toggler__state .toggler__legend_on {
-      display: block;
+
+    &__control {
+        position: relative;
+
+        @include size(52px, 28px);
+
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+
+            @include size(24px);
+            border-radius: 50%;
+
+            @include position(2px, 2px);
+            background-color: var(--grey-2);
+        }
     }
 
-    &:checked ~ .toggler__state .toggler__legend_off {
-      display: none;
+    &__icon {
+        @include size(52px, 28px);
+        fill: var(--white);
+        color: var(--grey-2);
     }
 
-    & ~ .toggler__state .toggler__legend_off {
-      display: block;
+
+    &__legend {
+        display: none;
+        margin: 0;
+        margin-left: 12px;
+
+        @include font();
+        @include text(16px, 24px, 400, var(--grey-4));
+        font-style: normal;
     }
 
-    &:focus ~ .toggler__state .toggler__legend {
-      text-decoration: underline;
-    }
+    &__input {
+        opacity: 0;
 
-    &:disabled ~ .toggler__state .toggler__icon {
-      fill: var(--grey-2);
-      color: var(--grey-2);
-    }  
+        @include size(1px);
+        pointer-events: none;
+        position: absolute;
 
-    &:disabled ~ .toggler__state .toggler__control::before {
-      background-color: var(--grey-3);
-    }
+        &:checked ~ .toggler__state .toggler__control::before {
+            top: 2px;
+            left: calc(100% - 26px);
+            background-color: var(--white);
+        }
 
-    &:disabled ~ .toggler__state  {
-      cursor: default;
+        &:checked ~ .toggler__state .toggler__icon {
+            fill: var(--blue-2);
+            color: var(--blue-2);
+        }
+
+        &:checked ~ .toggler__state .toggler__legend_on {
+            display: block;
+        }
+
+        &:checked ~ .toggler__state .toggler__legend_off {
+            display: none;
+        }
+
+        & ~ .toggler__state .toggler__legend_off {
+            display: block;
+        }
+
+        &:focus ~ .toggler__state .toggler__legend {
+            text-decoration: underline;
+        }
+
+        &:disabled ~ .toggler__state .toggler__icon {
+            fill: var(--grey-2);
+            color: var(--grey-2);
+        }
+
+        &:disabled ~ .toggler__state .toggler__control::before {
+            background-color: var(--grey-3);
+        }
+
+        &:disabled ~ .toggler__state {
+            cursor: default;
+        }
     }
-  }
 }
 

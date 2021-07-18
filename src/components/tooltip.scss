@@ -1,56 +1,56 @@
+@import "../mixins.scss";
+
 .tooltip {
-  position: relative;
-  display: inline-block; 
+    position: relative;
+    display: inline-block;
 
-    
-  &__menu {
-    width: 130px;
-    min-height: 45px;
-    padding: 13px 21px 8px;
-    
-    display: none; 
-    
-    position: absolute;
-    @include position(-8px, 50%);
-    transform: translate(-50%, -100%);  
 
-    background-color: var(--blue-2);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 10px;
-  
-    box-sizing: border-box;
+    &__menu {
+        width: 130px;
+        min-height: 45px;
+        padding: 13px 21px 8px;
+        display: none;
+        position: absolute;
 
-      
-    &::after {
-      content: "";
-      border: 14px solid transparent;
-      border-top: 6px solid var(--blue-2);
+        @include position(-8px, 50%);
+        transform: translate(-50%, -100%);
+        background-color: var(--blue-2);
+        box-shadow: 0 2px 4px rgba(33, 36, 41, .05);
+        border-radius: 10px;
+        box-sizing: border-box;
 
-      position: absolute;
-      @include position(55%, 50%); 
-      transform: translate(-50%, 100%);
+
+        &::after {
+            content: '';
+            border: 14px solid transparent;
+            border-top: 6px solid var(--blue-2);
+            position: absolute;
+
+            @include position(55%, 50%);
+            transform: translate(-50%, 100%);
+        }
     }
-  }
 
-  &__text {
-    margin: 0; 
-    @include font();
-    @include text(16px, 24px, 400, var(--grey-2));
-    font-style: normal; 
-    text-align: center; 
-  }
+    &__text {
+        margin: 0;
 
-  &__trigger {
-    @include size(24px);
-    cursor: pointer;
-      
-    &:hover ~ .tooltip__menu {
-      display: block;
+        @include font();
+        @include text(16px, 24px, 400, var(--grey-2));
+        font-style: normal;
+        text-align: center;
     }
-  }
 
-  &__help-icon {
-    @include size(100%);
-    color: var(--black);
-  }
+    &__trigger {
+        @include size(24px);
+        cursor: pointer;
+
+        &:hover ~ .tooltip__menu {
+            display: block;
+        }
+    }
+
+    &__help-icon {
+        @include size(100%);
+        color: var(--black);
+    }
 }

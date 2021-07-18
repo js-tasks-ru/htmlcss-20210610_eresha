@@ -1,15 +1,14 @@
 .avatar {
-  @include size(200px);
-  border-radius: 50%;
+    @include size(200px);
+    border-radius: 50%;
+    overflow: hidden;
 
-  overflow: hidden;
-    
-  &_preview {
-    width: 200px;
-  }
+    &_preview {
+        width: 200px;
+    }
 
-  &__img {
-    @include size(100%);
-    object-fit: cover;
-  }
+    &__img {
+        @include size(100%);
+        object-fit: cover;
+    }
 }
