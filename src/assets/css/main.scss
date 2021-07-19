@@ -1,0 +1,35 @@
+@import '../fonts/fonts.css';
+
+:root {
+    --white: #fff;
+    --black: #212429;
+    --pink: #f784ad;
+    --purple: #7048e8;
+    --purple-2: #5028c6;
+    --blue: #374fc7;
+    --blue-2: #4263eb;
+    --blue-3: #2342c0;
+    --blue-4: #334d6e;
+    --blue-5: 160, 177, 245;
+    --blue-6: #f9fafc;
+    --red: #f03d3e;
+    --grey-1: #f8f9fa;
+    --grey-2: #dde2e5;
+    --grey-3: #acb5bd;
+    --grey-4: #495057;
+    --grey-5: #e2e6e8;
+    --grey-6: #f3f5f5;
+    --grey-7: #e3e7ea;
+    --grey-8: #90a0b7;
+    --grey-overlay: 196, 196, 196;
+    --black-shadow: 33, 36, 41;
+    --error: var(--red);
+    --success: var(--blue);
+    --primary: var(--blue);
+    --secondary: var(--purple);
+    --primary: var(--blue);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}

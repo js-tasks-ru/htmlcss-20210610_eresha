@@ -1,0 +1,43 @@
+
+.sidebar__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.sidebar__menu {  
+  display: flex;
+  flex-direction: column;
+  
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sidebar__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.sidebar__title {
+  margin: 0 0 16px;
+    
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black-1);
+}
+
+.sidebar__menu-link {
+  margin: 0 0 4px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px; 
+  color: var(--black);
+
+  text-decoration: none;
+}
+
+.sidebar__menu-link_active {
+  color: var(--red-1);
+}

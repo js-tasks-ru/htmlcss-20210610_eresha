@@ -1,0 +1,46 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin reset-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@mixin size ($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin text ($size: false, $lh: false, $weight: false, $color: false) {
+    @if $size { font-size: $size; }
+
+    @if $lh { line-height: $lh; }
+
+    @if $weight { font-weight: $weight; }
+
+    @if $color { color: $color; }
+}
+
+@mixin font ($font: 'Inter') {
+    font-family: $font, sans-serif;
+}
+
+@mixin position ($top: false, $left: false, $bottom: false, $right: false) {
+    @if $top { top: $top; }
+
+    @if $left { left: $left; }
+
+    @if $bottom { bottom: $bottom; }
+
+    @if $right { right: $right; }
+}
+
+@mixin position-center () {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

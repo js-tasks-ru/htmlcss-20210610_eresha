@@ -1,11 +1,61 @@
-.header {
-  padding: 96px 0 77px;
+.header__wrapper {
+  padding: 25px 0 40px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header__top_inner { 
+  margin-bottom: 22px;
+}
+
+.header__logo-link {
+  width: auto;
+  margin-right: auto;
+}
+
+.header__navigation {
+  width: 400px;
+  margin-right: 57px;
+}
+
+.header__togglers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 124px;
+
+  margin: 0;
 }
 
 .header__title {
   margin: 0;
 
   font-size: 50px;
-  line-height: 64px; 
+  line-height: 64px;
+}
 
+.header__logo-icon {
+  width: 110px;
+  height: 32px;
+  color: var(--black);
+}
+
+.header__toggler {
+  margin: 0;
+}
+
+.header__toggler-icon_sun {
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
+
+.header__toggler-icon_moon {
+  width: 20px;
+  height: 20px;
+  color: var(--grey-3);
 }

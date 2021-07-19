@@ -13,14 +13,13 @@
 .toggler__state {
   display: flex;
   align-items: center;
-
+  
   cursor: pointer;
 }
 
 
 .toggler__control {
   position: relative;
-  margin-right: 12px;
 
   width: 52px;
   height: 28px;
@@ -64,6 +63,7 @@
 .toggler__legend { 
   display: none;
   margin: 0;
+  margin-left: 12px;
 
   font-family: Inter;
   font-style: normal;

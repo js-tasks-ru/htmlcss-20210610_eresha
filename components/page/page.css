@@ -14,4 +14,18 @@ body {
 .page__box {
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 16px;
+}
+
+.page_template {  
+  background-color: var(--blue-6);
+}
+
+
+.page__main input { 
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  position: absolute; 
 }

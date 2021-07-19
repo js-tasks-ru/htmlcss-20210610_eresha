@@ -1,0 +1,60 @@
+.header {
+    &__wrapper {
+        padding: 25px 0 40px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__top_inner {
+        margin-bottom: 22px;
+    }
+
+    &__logo-link {
+        width: auto;
+        margin-right: auto;
+    }
+
+    &__navigation {
+        width: auto;
+        margin-right: 57px;
+    }
+
+    &__togglers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 124px;
+        margin: 0;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    &__logo-icon {
+        @include size(110px, 32px);
+        color: var(--black);
+    }
+
+    &__toggler {
+        margin: 0;
+    }
+
+    &__toggler-icon {
+        &_sun {
+            @include size(24px);
+            color: var(--black);
+        }
+
+        &_moon {
+            @include size(20px);
+            color: var(--grey-3);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.page {
+    background-color: var(--white);
+    color: var(--black);
+    font-style: normal;
+    font-weight: 500;
+
+    &__box {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    &_template {
+        background-color: var(--blue-6);
+    }
+}

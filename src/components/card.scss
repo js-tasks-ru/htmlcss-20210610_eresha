@@ -1,0 +1,46 @@
+.card {
+    @include reset-link();
+    display: flex;
+    flex-direction: column;
+    flex-basis: 350px;
+    min-height: 367px;
+    padding: 32px 24px;
+    background: var(--white);
+    color: var(--black);
+    box-shadow: 0 2px 4px rgba(var(--black-shadow), .05);
+    border-radius: 12px;
+    box-sizing: border-box;
+
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    // &__content-histogram {
+    //   @include size(100%, auto);
+    // }
+
+    &__title {
+        margin: 0 0 6px;
+
+        @include text(21px, 25px);
+        @include font('Roboto');
+    }
+
+    &__subtitle {
+        margin: 0;
+
+        @include font('Roboto');
+    }
+}

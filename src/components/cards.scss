@@ -1,0 +1,17 @@
+.cards {
+    padding: 68px 0 64px;
+    border-bottom: 1px solid var(--grey-2);
+    text-align: center;
+
+    &__content {
+        display: none;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(367px, auto));
+        grid-gap: 30px;
+    }
+
+    &__button {
+        margin-top: 40px;
+        min-width: 182px;
+    }
+}
