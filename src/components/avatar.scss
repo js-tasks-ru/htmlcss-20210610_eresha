@@ -4,11 +4,24 @@
     overflow: hidden;
 
     &_preview {
-        width: 200px;
+        @include size(116px);
     }
 
     &__img {
         @include size(100%);
         object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .avatar { 
+        &_preview {
+            @include size(200px);
+        }
+
+        &__img {
+            @include size(100%);
+            object-fit: cover;
+        }
     }
 }

@@ -7,12 +7,10 @@
         cursor: pointer;
     }
 
-
     &__control {
         position: relative;
 
         @include size(52px, 28px);
-
 
         &::before {
             position: absolute;
@@ -32,7 +30,6 @@
         fill: var(--white);
         color: var(--grey-2);
     }
-
 
     &__legend {
         display: none;
@@ -92,4 +89,3 @@
         }
     }
 }
-
