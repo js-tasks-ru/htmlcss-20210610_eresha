@@ -1,20 +1,20 @@
 .content {
     padding: 32px 0 64px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     background-color: var(--white);
     box-sizing: border-box;
     overflow: hidden;
 
     &__container {
-        padding: 0 106px 0 46px;
+        padding: 0 16px;
         box-sizing: border-box;
     }
 
     &__title {
-        margin: 0 0 58px;
+        margin: 0 0 20px;
 
         @include font();
-        @include text(28px, 38px, 400, var(--grey-4));
+        @include text(20px, 26px, 400, var(--grey-4));
         font-style: normal;
     }
 
@@ -27,10 +27,6 @@
     &__component_tooltip {
         padding-left: 100px;
     }
-
-    /* &__component_avatar {
-    margin: 70px 0 60px 46px;
-  } */
 
     &__tabs {
         width: 100%;
@@ -50,5 +46,19 @@
 
     &__code pre {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        &__container {
+            padding: 0 106px 0 46px;
+        }
+
+        &__title {
+            margin: 0 0 58px;
+
+            @include text(28px, 38px);
+        }
     }
 }

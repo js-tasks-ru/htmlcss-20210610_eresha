@@ -5,13 +5,31 @@
 
     &__content {
         display: none;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(367px, auto));
-        grid-gap: 30px;
+        grid-template-columns: repeat(2, minmax(164px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 16px;
+
+        &_all {
+            display: grid;
+        }
     }
 
     &__button {
         margin-top: 40px;
         min-width: 182px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cards {
+        &__content {
+            grid-template-columns: repeat(3, calc(33.3333% - 15px));
+            grid-template-rows: repeat(auto-fill, minmax(367px, auto));
+            grid-gap: 30px;
+
+            &_all {
+                display: none;
+            }
+        }
     }
 }

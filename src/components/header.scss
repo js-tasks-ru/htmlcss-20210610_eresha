@@ -6,7 +6,7 @@
     &__top {
         display: flex;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 49px;
     }
 
     &__top_inner {
@@ -15,46 +15,74 @@
 
     &__logo-link {
         width: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     &__navigation {
-        width: auto;
-        margin-right: 57px;
+        display: none;
     }
 
     &__togglers {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 124px;
-        margin: 0;
+        display: none;
     }
 
     &__title {
         margin: 0;
-        font-size: 50px;
-        line-height: 64px;
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 400;
     }
 
     &__logo-icon {
         @include size(110px, 32px);
         color: var(--black);
     }
-
-    &__toggler {
-        margin: 0;
-    }
-
-    &__toggler-icon {
-        &_sun {
-            @include size(24px);
-            color: var(--black);
+}
+@media screen and (min-width: 768px) {
+    .header {
+        &__top {
+            margin-bottom: 40px;
         }
 
-        &_moon {
-            @include size(20px);
-            color: var(--grey-3);
+        &__logo-link {
+            margin: 0 auto 0 0;
+        }
+
+        &__navigation {
+            display: block;
+            width: auto;
+            margin-right: 57px;
+        }
+
+        &__togglers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 124px;
+            margin: 0;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 50px;
+            line-height: 64px;
+            font-weight: 500;
+        }
+
+        &__toggler {
+            margin: 0;
+        }
+
+        &__toggler-icon {
+            &_sun {
+                @include size(24px);
+                color: var(--black);
+            }
+
+            &_moon {
+                @include size(20px);
+                color: var(--grey-3);
+            }
         }
     }
 }

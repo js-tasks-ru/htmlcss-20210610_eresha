@@ -1,33 +1,41 @@
 .sidebar {
-    &__nav-list {
-        @include reset-list();
-    }
+    display: none;
+}
 
-    &__menu {
-        display: flex;
-        flex-direction: column;
-        font-style: normal;
-        font-weight: 400;
-    }
+@media screen and (min-width: 768px) {
+    .sidebar {
+        display: block;
 
-    &__nav-item:not(:last-child) {
-        margin-bottom: 32px;
-    }
+        &__nav-list {
+            @include reset-list();
+        }
 
-    &__title {
-        margin: 0 0 16px;
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            font-style: normal;
+            font-weight: 400;
+        }
 
-        @include text(20px, 26px, 400,  var(--black-1));
-    }
+        &__nav-item:not(:last-child) {
+            margin-bottom: 32px;
+        }
 
-    &__menu-link {
-        margin: 0 0 4px;
+        &__title {
+            margin: 0 0 16px;
 
-        @include text(14px, 22px, 400,  var(--black));
-        text-decoration: none;
+            @include text(20px, 26px, 400, var(--black-1));
+        }
 
-        &_active {
-            color: var(--red-1);
+        &__menu-link {
+            margin: 0 0 4px;
+
+            @include text(14px, 22px, 400, var(--black));
+            text-decoration: none;
+
+            &_active {
+                color: var(--red-1);
+            }
         }
     }
 }
