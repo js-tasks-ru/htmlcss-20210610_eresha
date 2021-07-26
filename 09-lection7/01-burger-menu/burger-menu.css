@@ -1,10 +1,8 @@
 .mobile-menu {
     position: fixed;
-    top: 0;
+    top: 64px;
     right: 0;
     width: 100vw;
-    height: calc(100vh - 64px);
-    margin-top: 64px;
     background: var(--blue-6);
     transform: translateX(-100vw);
     transition: transform 200ms ease-in-out;
