@@ -1,0 +1,120 @@
+.mobile-menu {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 100vw;
+    background: var(--blue-6);
+    transform: translateX(-100vw);
+    transition: transform 200ms ease-in-out;
+}
+
+.mobile-menu[data-open] {
+    transform: translateX(0);
+}
+
+.mobile-menu ~ .mobile-menu__buttons .mobile-menu__button_close {
+    display: none;
+}
+
+.mobile-menu[data-open] ~ .mobile-menu__buttons .mobile-menu__button_open {
+    display: none;
+}
+
+.mobile-menu[data-open] ~ .mobile-menu__buttons .mobile-menu__button_close {
+    display: block;
+}
+
+.mobile-menu__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--grey-2);    
+    overflow: hidden;
+}
+
+.mobile-menu__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu__button-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--black);
+}
+
+.mobile-menu__wrapper {
+    padding: 16px 16px;
+}
+
+.mobile-menu__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--grey-2); 
+    border-top: 1px solid var(--grey-2);
+}
+
+.mobile-menu__theme {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--grey-4);
+
+}
+
+.mobile-menu__toggler {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu__nav {
+
+}
+
+.mobile-menu__nav-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3);
+}
+
+.mobile-menu__nav-list {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-menu__nav-item {
+    margin-bottom: 16px;
+}
+
+.mobile-menu__nav-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.mobile-menu__nav-link_active {
+    color: var(--red-1);
+}
+
+.mobile-menu__nav-item:last-child {
+    margin-top: 58px;
+}
