@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+  <title>Burger menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./burger-menu.css">
+  <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+  <link rel="stylesheet" href="../../components/header/header.css">
+  <script defer src="./burger-menu.js"></script>
+</head>
+
+<body>
+  <div class="mobile-menu" id="burger-menu">
+    <div class="mobile-menu__wrapper">
+      <div class="mobile-menu__top">
+        <span class="mobile-menu__theme">Dark mode</span>
+        <div class="mobile-menu__toggler">
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" name="toggler" value="1" />
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <svg class="toggler__icon" width="52" height="28">
+                  <use xlink:href="../../assets/images/sprite.svg#toggler"></use>
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="mobile-menu__nav">
+        <h4 class="mobile-menu__nav-title">Components</h4>
+        <nav>
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="#">Modal</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link mobile-menu__nav-link_active" href="#">Tooltip</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="#">Avatar</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="#">Calendar</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="#">Histogram</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="#">Custom form elements</a></li>
+            <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="#">Main page</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu__buttons">
+    <button class="mobile-menu__button mobile-menu__button_open" id="burger-menu-open">
+      <svg class="mobile-menu__button-icon mobile-menu__button-icon_open" width="24" height="24" viewBox="0 0 24 24">
+        <use xlink:href="../../assets/images/sprite.svg#menu-open"></use>
+      </svg>
+    </button>
+    <button class="mobile-menu__button mobile-menu__button_close" id="burger-menu-close">
+      <svg class="mobile-menu__button-icon mobile-menu__button-icon_close" width="24" height="24" viewBox="0 0 24 24">
+        <use xlink:href="../../assets/images/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+
+</body>
+
 </html>
