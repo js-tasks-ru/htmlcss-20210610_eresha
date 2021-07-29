@@ -1,70 +1,69 @@
 .histogram {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  
-  
-  padding: 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  
-  background-color: var(--white);
+    padding: 16px 24px 24px;
 
-  border: 1px solid var(--grey-3);
-  box-sizing: border-box;
-  border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    background-color: var(--main-bgc);
+
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .histogram__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 39px;
 
-  color: var(--black);
+    color: var(--black);
 }
 
-.histogram__counter { 
-  text-align: left;
+.histogram__counter {
+    text-align: left;
 }
 
 .histogram__counter-sum,
 .histogram__counter-title {
-  margin: 0;
+    margin: 0;
 }
 
 .histogram__counter-title {
-  margin-bottom: 6px;
-  
-  opacity: 0.8;
+    margin-bottom: 6px;
+
+    opacity: 0.8;
 }
 
-.histogram__counter-sum { 
-  font-size: 20px;
-  line-height: 26px;
+.histogram__counter-sum {
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .histogram__link {
-  color: var(--blue-2);
-  text-decoration: none;
-  background-color:  transparent;
-  border: none;
+    color: var(--blue-2);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
 }
 
 .histogram__bar {
-  display: flex;
-  align-items: flex-end;
-  gap: 1px;
+    display: flex;
+    align-items: flex-end;
+    gap: 1px;
 
-  width: 100%;
+    width: 100%;
 }
 
 .histogram__bar-item {
-  background: var(--blue-2);
-  margin: 0;
-  flex-grow: 1;
+    background: var(--blue-2);
+    margin: 0;
+    flex-grow: 1;
 }

@@ -42,7 +42,7 @@
 .toggler__icon {
     width: 52px;
     height: 28px;
-    fill: var(--white);
+    fill: var(--main-bgc);
     color: var(--grey-2);
 }
 
@@ -50,7 +50,7 @@
     top: 2px;
     left: calc(100% - 26px);
 
-    background-color: var(--white);
+    background-color: var(--main-bgc);
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__icon {

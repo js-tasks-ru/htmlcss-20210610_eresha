@@ -22,6 +22,34 @@
     --grey-8: #90a0b7;
     --grey-overlay: 196, 196, 196;
     --black-shadow: 33, 36, 41;
+
+    --main-bgc: var(--white);
+    --main-color: var(--black);
+    --second-color: var(--black);
+    --main-page-bgr: #F9FAFC;
+
+    --button-clr: var(--white);
+    --primary: var(--blue);
+    --primary-hvr: #5d7aee;
+    --primary-act: #264de8;
+
+    --secondary: var(--purple);
+    --secondary-hvr: #8665ec;
+    --secondary-act: #5c2ee5;
+
+    --alternate: var(--white);
+    --alternate-clr: var(--grey-4);
+    --alternate-brd: var(--grey-3);
+    --alternate-brd-hvr: #c1c7cd;
+    --alternate-brd-act: #99a4ad;
+
+    --open-hvr: var(--grey-2);
+    --close-hvr: var(--red);
+
+    --invalid: #F03D3E;
+    --success: var(--blue);
+    --disabled: #0000003f;
+
     --error: var(--red);
     --success: var(--blue);
     --primary: var(--blue);
@@ -30,4 +58,34 @@
 
 * {
     font-family: "Inter", sans-serif;
+}
+
+
+html[data-theme-dark] {
+    --white: var(--black);
+    --main-color: var(--white);
+    --second-color: var(--grey-3);
+    --main-page-bgr: var(--grey-4);
+
+    --button-clr: var(--white);
+    --primary: var(--blue);
+    --primary-hvr: #5d7aee;
+    --primary-act: #264de8;
+
+    --secondary: var(--purple);
+    --secondary-hvr: #8665ec;
+    --secondary-act: #5c2ee5;
+
+    --alternate: var(--white);
+    --alternate-clr: var(--grey-4);
+    --alternate-brd: var(--grey-3);
+    --alternate-brd-hvr: #c1c7cd;
+    --alternate-brd-act: #99a4ad;
+
+    --open-hvr: var(--grey-2);
+    --close-hvr: var(--red);
+
+    --invalid: #F03D3E;
+    --success: var(--blue);
+    --disabled: #0000003f;
 }

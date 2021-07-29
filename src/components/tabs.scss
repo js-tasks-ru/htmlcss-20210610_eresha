@@ -10,21 +10,21 @@
     position: absolute;
 }
 
-#tab-1:checked ~ .tabs label[for="tab-1"],
-#tab-2:checked ~ .tabs label[for="tab-2"],
-#tab-3:checked ~ .tabs label[for="tab-3"],
-#tab-4:checked ~ .tabs label[for="tab-4"],
-#tab-html:checked ~ .tabs label[for="tab-html"],
-#tab-css:checked ~ .tabs label[for="tab-css"] {
+#tab-1:checked ~ .tabs label[for='tab-1'],
+#tab-2:checked ~ .tabs label[for='tab-2'],
+#tab-3:checked ~ .tabs label[for='tab-3'],
+#tab-4:checked ~ .tabs label[for='tab-4'],
+#tab-html:checked ~ .tabs label[for='tab-html'],
+#tab-css:checked ~ .tabs label[for='tab-css'] {
     color: var(--black);
 }
 
-#tab-1:checked ~ .tabs label[for="tab-1"]::after,
-#tab-2:checked ~ .tabs label[for="tab-2"]::after,
-#tab-3:checked ~ .tabs label[for="tab-3"]::after,
-#tab-4:checked ~ .tabs label[for="tab-4"]::after,
-#tab-html:checked ~ .tabs label[for="tab-html"]::after,
-#tab-css:checked ~ .tabs label[for="tab-css"]::after {
+#tab-1:checked ~ .tabs label[for='tab-1']::after,
+#tab-2:checked ~ .tabs label[for='tab-2']::after,
+#tab-3:checked ~ .tabs label[for='tab-3']::after,
+#tab-4:checked ~ .tabs label[for='tab-4']::after,
+#tab-html:checked ~ .tabs label[for='tab-html']::after,
+#tab-css:checked ~ .tabs label[for='tab-css']::after {
     display: block;
 }
 
@@ -54,11 +54,11 @@
 
 .tabs {
     position: relative;
-    background-color: var(--white);
+    background-color: var(--main-bgc);
 
     &::after {
         position: absolute;
-        content: "";
+        content: '';
 
         @include size(100vw, 1px);
         @include position-center();
@@ -86,7 +86,7 @@
             cursor: pointer;
 
             &::after {
-                content: "";
+                content: '';
                 display: none;
                 position: absolute;
 

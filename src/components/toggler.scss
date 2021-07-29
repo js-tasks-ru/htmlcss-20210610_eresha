@@ -27,7 +27,7 @@
 
     &__icon {
         @include size(52px, 28px);
-        fill: var(--white);
+        fill: var(--main-bgc);
         color: var(--grey-2);
     }
 
@@ -51,7 +51,7 @@
         &:checked ~ .toggler__state .toggler__control::before {
             top: 2px;
             left: calc(100% - 26px);
-            background-color: var(--white);
+            background-color: var(--main-bgc);
         }
 
         &:checked ~ .toggler__state .toggler__icon {

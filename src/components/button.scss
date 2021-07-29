@@ -11,9 +11,8 @@
     box-sizing: border-box;
     cursor: pointer;
 
-
     &[disabled] {
-        opacity: .5;
+        opacity: 0.5;
         cursor: default;
     }
 
@@ -22,7 +21,7 @@
     }
 
     &_primary {
-        color: var(--white);
+        color: var(--main-bgc);
         background-color: var(--blue-2);
 
         &:hover:not(.button[disabled]) {
@@ -31,7 +30,7 @@
     }
 
     &_secondary {
-        color: var(--white);
+        color: var(--main-bgc);
         background-color: var(--secondary);
 
         &:hover:not(.button[disabled]) {
