@@ -41,7 +41,7 @@
 
 .button_alternate {
     color: var(--grey-4);
-    background-color: var(--blue-6);
+    background-color: var(--main-content-bgc);
     border: 1px solid var(--grey-3);
 }
 

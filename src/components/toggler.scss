@@ -14,7 +14,7 @@
 
         &::before {
             position: absolute;
-            content: '';
+            content: "";
             display: block;
 
             @include size(24px);
@@ -27,7 +27,7 @@
 
     &__icon {
         @include size(52px, 28px);
-        fill: var(--main-bgc);
+        fill: var(--white);
         color: var(--grey-2);
     }
 
@@ -51,7 +51,7 @@
         &:checked ~ .toggler__state .toggler__control::before {
             top: 2px;
             left: calc(100% - 26px);
-            background-color: var(--main-bgc);
+            background-color: var(--white);
         }
 
         &:checked ~ .toggler__state .toggler__icon {

@@ -21,30 +21,30 @@
     }
 
     &_primary {
-        color: var(--main-bgc);
-        background-color: var(--blue-2);
+        color: var(--button-color);
+        background-color: var(--primary);
 
         &:hover:not(.button[disabled]) {
-            background-color: var(--blue-3);
+            background-color: var(--primary-hover);
         }
     }
 
     &_secondary {
-        color: var(--main-bgc);
+        color: var(--button-color);
         background-color: var(--secondary);
 
         &:hover:not(.button[disabled]) {
-            background-color: var(--purple-2);
+            background-color: var(--psecondary-hover);
         }
     }
 
     &_alternate {
-        color: var(--grey-4);
-        background-color: var(--blue-6);
-        border: 1px solid var(--grey-3);
+        color: var(--button-alternate-color);
+        background-color: var(--alternate);
+        border: 1px solid var(--alternate-border);
 
         &:hover:not(.button[disabled]) {
-            border-color: var(--black);
+            border-color: var(--alternate-border-hover);
         }
     }
 }

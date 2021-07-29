@@ -2,11 +2,11 @@
     position: relative;
     max-width: 304px;
     width: 100%;
-    border: 1px solid var(--grey-3);
+    border: 1px solid var(--border);
 
     &__title {
         padding-top: 1em;
-        @include text(20px, 1.2, 600, var(--blue-4));
+        @include text(20px, 1.2, 600, var(--font-title-color));
         @include font();
         font-style: normal;
         text-align: center;
@@ -32,7 +32,7 @@
         justify-content: center;
         align-items: center;
 
-        @include text(20px, 1.15, 400, var(--blue-4));
+        @include text(20px, 1.15, 400, var(--font-second-color));
         @include font('Source Sans Pro');
         font-style: normal;
 

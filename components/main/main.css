@@ -1,5 +1,5 @@
 .main {
-  /* padding: 68px 0 204px; */
-  padding: 0;
-  background-color: var(--blue-6);
+    /* padding: 68px 0 204px; */
+    padding: 0;
+    background-color: var(--main-content-bgc);
 }

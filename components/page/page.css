@@ -19,7 +19,7 @@ body {
 }
 
 .page_template {
-    background-color: var(--blue-6);
+    background-color: var(--main-content-bgc);
 }
 
 .page__main input {
