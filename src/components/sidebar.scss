@@ -24,13 +24,13 @@
         &__title {
             margin: 0 0 16px;
 
-            @include text(20px, 26px, 400, var(--black-1));
+            @include text(20px, 26px, 400, var(--font-color));
         }
 
         &__menu-link {
             margin: 0 0 4px;
 
-            @include text(14px, 22px, 400, var(--black));
+            @include text(14px, 22px, 400, var(--font-color));
             text-decoration: none;
 
             &_active {

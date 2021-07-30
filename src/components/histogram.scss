@@ -4,10 +4,10 @@
     width: 100%;
     padding: 16px 24px 24px;
 
-    @include text (16px, 24px, 400, var(--black));
+    @include text(16px, 24px, 400, var(--font-color));
     font-style: normal;
-    background-color: var(--white);
-    border: 1px solid var(--grey-3);
+    background-color: var(--main-bgc);
+    border: 1px solid var(--border);
     box-sizing: border-box;
     border-radius: 8px;
 
@@ -29,7 +29,7 @@
 
     &__counter-title {
         margin-bottom: 6px;
-        opacity: .8;
+        opacity: 0.8;
     }
 
     &__counter-sum {

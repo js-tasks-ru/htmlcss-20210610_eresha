@@ -35,7 +35,7 @@
 
     &__logo-icon {
         @include size(110px, 32px);
-        color: var(--black);
+        color: var(--logo-color);
     }
 }
 @media screen and (min-width: 768px) {
@@ -76,7 +76,7 @@
         &__toggler-icon {
             &_sun {
                 @include size(24px);
-                color: var(--black);
+                color: var(--font-color);
             }
 
             &_moon {

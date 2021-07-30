@@ -1,14 +1,15 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .page {
-  background-color: var(--white);
-  
-  color: var(--black);  font-style: normal;
-  font-weight: 500;
+    background-color: var(--main-bgc);
+
+    color: var(--black);
+    font-style: normal;
+    font-weight: 500;
 }
 
 .page__box {
@@ -17,15 +18,14 @@ body {
     padding: 0 16px;
 }
 
-.page_template {  
-  background-color: var(--blue-6);
+.page_template {
+    background-color: var(--main-content-bgc);
 }
 
-
-.page__main input { 
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  pointer-events: none;
-  position: absolute; 
+.page__main input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+    position: absolute;
 }

@@ -1,44 +1,90 @@
 @import '../fonts/fonts.css';
 
 :root {
-    --white: #ffffff;
+    --white: #fff;
+    --white-1: #ffffff75;
     --black: #212429;
-    --black-1: #000000;
-    --pink: #F784AD;
-    
-    --purple: #7048E8;
-    --purple-2: #5028C6;
-
-    --blue: #374FC7;
-    --blue-2: #4263EB;
-    --blue-3: #2342C0;
-    --blue-4: #334D6E;
+    --pink: #f784ad;
+    --purple: #7048e8;
+    --purple-2: #5028c6;
+    --blue: #374fc7;
+    --blue-2: #4263eb;
+    --blue-3: #2342c0;
+    --blue-4: #334d6e;
     --blue-5: 160, 177, 245;
-    --blue-6: #F9FAFC;
-
-    --red: #F03D3E;
-    --red-1: #D84910;
-
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
+    --blue-6: #f9fafc;
+    --red: #f03d3e;
+    --red-1: #d84910;
+    --grey-1: #f8f9fa;
+    --grey-2: #dde2e5;
+    --grey-3: #acb5bd;
     --grey-4: #495057;
-    --grey-5: #E2E6E8;
-    --grey-6: #F3F5F5;
-    --grey-7: #E3E7EA;
-    --grey-8: #90A0B7;
+    --grey-5: #e2e6e8;
+    --grey-6: #f3f5f5;
+    --grey-7: #e3e7ea;
+    --grey-8: #90a0b7;
     --grey-overlay: 196, 196, 196;
     --black-shadow: 33, 36, 41;
 
-    --error: var(--red);
-    --success: var(--blue);
+    --main-bgc: var(--white);
+    --main-content-bgc: var(--blue-6);
+    --card-bgc: var(--white);
+    --font-color: var(--black);
+    --font-title-color: var(--blue-4);
+    --font-second-color: var(--grey-3);
+    --font-component-color: var(--grey-4);
 
-    --primary: var(--blue);
+    --active-text-color: var(--font-color);
+    
+    --logo-color: var(--black);
+
+    --button-color: var(--white);
+    --primary: var(--blue-2);
+    --primary-hover: var(--blue-3);
+
     --secondary: var(--purple);
+    --secondary-hover: var(--purple-2); 
 
-    --primary: var(--blue);
+    --button-alternate-color: var(--grey-4);
+    --alternate: var(--white);
+    --alternate-border: var(--grey-3);
+    --alternate-border-hover: var(--black);
+
+    --border: var(--grey-3);
+
+    --error: var(--red);
+    --success: var(--blue); 
 }
 
 * {
     font-family: 'Inter', sans-serif;
+}
+
+html[data-theme-dark] {
+    --main-bgc: var(--black);
+    --main-content-bgc: var(--grey-4);
+    --card-bgc: var(--black);
+    --font-color: var(--white-1);
+    --font-second-color: var(--grey-3);    
+    --font-component-color: var(--white-1);
+    --font-title-color: var(--grey-3);
+
+    --active-text-color: var(--grey-1);
+    
+    --logo-color: var(--grey-1);
+
+    --button-color: var(--white);
+    --primary: var(--blue-2);
+    --primary-hover: var(--blue-3);
+
+    --secondary: var(--purple);
+    --secondary-hover: var(--purple-2); 
+
+    --button-alternate-color: var(--grey-3);
+    --alternate: none;
+    --alternate-border: var(--grey-3);
+    --alternate-border-hover: var(--black);
+
+    --border: var(--grey-3);
+ 
 }
